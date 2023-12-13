@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+}
+button{
+    border-radius: 1px;
+    background-color: white;
+    border: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 8px 8px 5px;
+    background-color: rgb(18, 54, 105);
+}
+button:hover{
+    background-color: rgb(178, 185, 196);
+    color: rgb(0, 0, 0);
+}
+.innerStyle{
+    font-family:cursive;
+    font-size: 15px ;
+    /* text-shadow: 5px 2px 5px; */
+}
+input{
+    border-radius: 1px;
+    box-shadow: 8px 8px 5px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 54, 105);
+}
+input:hover{
+    background-color: rgb(178, 185, 196);
+    color: white; 
+}

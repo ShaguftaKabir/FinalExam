@@ -13,4 +13,12 @@ function display(data){
     oldContent.textContent= "";
     console.log(allData);
 }
+for(var i=0; i<allData.length; i++){
+    var newDiv= document.createElement("div");
+    newDiv.innerHTML= ``
+    newDiv.classList.add("innerStyle");
+    oldContent.appendChild(newDiv);
+}
+}
+
 
