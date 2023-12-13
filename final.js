@@ -3,17 +3,20 @@ function show(){
     var apiKey= '5393348a84e007a9a7bfe365a3f94e17'
     var url= `https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&appid=${apiKey}`;
 
+    // var weath;
+    // var shagufta= {"weath":["coord", "weather", "visibility", "main"]}  ;
+   
     fetch (url)
     .then(res => res.json())
     .then(data => display(data))
 }
 function display(data){
-    var allData= data.;
+    var allData= data;
     var oldContent= document.getElementById("content");
     oldContent.textContent= "";
     console.log(allData);
 
-for(var i=0; i<allData.length; i++){
+for(var i=0; i<data.length; i++){
     var newDiv= document.createElement("div");
     newDiv.innerHTML= `Name: ${allData[i].name} <br>
                        Temperature: ${allData[i].temp} <br>
