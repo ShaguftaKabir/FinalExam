@@ -11,16 +11,17 @@ function show(){
     .then(data => display(data))
 }
 function display(data){
-    var allData= data;
+    var allData= data.weather;
     var oldContent= document.getElementById("content");
     oldContent.textContent= "";
-    console.log(allData);
+    // console.log(allData);
 
-for(var i=0; i<data.length; i++){
+for(var i=0; i<allData.length; i++){
     var newDiv= document.createElement("div");
-    newDiv.innerHTML= `Name: ${allData[i].name} <br>
-                       Temperature: ${allData[i].temp} <br>
-                       `;
+    newDiv.innerHTML= `ID: ${allData[i].id} <br>
+                       Main: ${allData[i].main} <br>
+                       Weather Description:${allData[i].description}<br>
+                       Icon:${allData[i].icon}<br>`;
 
 
     newDiv.classList.add("innerStyle");
