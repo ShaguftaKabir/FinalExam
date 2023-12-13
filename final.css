@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    /* background-image: url(weather-forecast-concept-climate-change-260nw-1390294940.webp); */
 }
 button{
     border-radius: 1px;
@@ -16,7 +17,6 @@ button:hover{
 .innerStyle{
     font-family:cursive;
     font-size: 15px ;
-    /* text-shadow: 5px 2px 5px; */
 }
 input{
     border-radius: 1px;
@@ -28,4 +28,8 @@ input{
 input:hover{
     background-color: rgb(178, 185, 196);
     color: white; 
+}
+h2{
+    background-color: rgb(35, 98, 116);
+    color: aliceblue;
 }
